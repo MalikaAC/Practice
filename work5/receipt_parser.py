@@ -31,13 +31,14 @@ print(total)
 #4. Extract date and time information
 datetime = re.search(r"\d{2}\.\d{2}\.\d{4}\s\d{2}:\d{2}:\d{2}", text)
 
-print(datetime.group())
+if datetime:
+     date, time = datetime.group().split()
 
 #5. Find payment method
 payment = re.search(r"([А-Яа-яA-Za-z\s]+):\n\d[\d ]*,\d{2}", text)
 
 if payment:
-    print(payment.group(1))
+    payment_method = payment.group(1)
 
 
 #6. Create a structured output (JSON or formatted text)
