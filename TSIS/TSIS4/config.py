@@ -1,0 +1,13 @@
+WIDTH = 600
+HEIGHT = 400
+CELL_SIZE = 20
+FPS = 10
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+DB_NAME = "postgres"
+DB_USER = "postgres"
+DB_PASSWORD = "26082008"
+DB_HOST = "localhost"
+DB_PORT = "5432"
